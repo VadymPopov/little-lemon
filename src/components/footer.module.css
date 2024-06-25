@@ -1,0 +1,38 @@
+/* src/Footer.module.css */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.footerLogo {
+  grid-column: span 1;
+  display: flex;
+  align-items: center;
+}
+
+.footerNav,
+.footerContact {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerNav a,
+.footerContact p {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.footerNav a:hover,
+.footerContact p:hover {
+  text-decoration: underline;
+}
+
+.footerContact p {
+  margin: 0;
+}

@@ -1,53 +1,30 @@
 import React from "react";
+import styles from "./footer.module.css";
+import { ReactComponent as Logo } from "../images/icons_assets/logo.svg";
 
-export default function Footer() {
+function Footer() {
   return (
-    <footer>
-      <img src='../../public/icons_assets/Logo.svg' alt='footer-logo' />
-
-      <div>
-        <p>Doormat Navigation</p>
-        <nav>
-          <ul>
-            <li>
-              <a href=''>Home</a>
-            </li>
-            <li>
-              <a href=''>About</a>
-            </li>
-            <li>
-              <a href=''>Menu</a>
-            </li>
-            <li>
-              <a href=''>Reservation</a>
-            </li>
-            <li>
-              <a href=''>Order Online</a>
-            </li>
-            <li>
-              <a href=''>Login</a>
-            </li>
-          </ul>
-        </nav>
+    <footer className={styles.footer}>
+      <div className={styles.footerLogo}>
+        <Logo />
       </div>
-      <div>
-        <p>Contact</p>
-        <ul>
-          <li>
-            <a href=''>Address</a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href=''>Phone</a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href=''>Email</a>
-          </li>
-        </ul>
+      <nav className={styles.footerNav}>
+        <h4>Doormat Navigation</h4>
+        <a href='#home'>Home</a>
+        <a href='#about'>About</a>
+        <a href='#menu'>Menu</a>
+        <a href='#reservation'>Reservation</a>
+        <a href='#order'>Order Online</a>
+        <a href='#login'>Login</a>
+      </nav>
+      <div className={styles.footerNav}>
+        <h4>Contact</h4>
+        <p>Address</p>
+        <p>Phone</p>
+        <p>Email</p>
       </div>
     </footer>
   );
 }
+
+export default Footer;

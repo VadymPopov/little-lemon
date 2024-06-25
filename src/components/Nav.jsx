@@ -1,29 +1,29 @@
 import React from "react";
+import styles from "./nav.module.css";
 
 export default function Nav() {
   return (
     <nav>
-      <ul>
-        <li>
-          <a href=''>Home</a>
+      <ul className={styles.list}>
+        <li className={styles.item}>
+          <a href='#home'>Home</a>
         </li>
-        <li>
-          <a href=''>About</a>
+        <li className={styles.item}>
+          <a href='#about'>About</a>
         </li>
-        <li>
-          <a href=''>Menu</a>
+        <li className={styles.item}>
+          <a href='#menu'>Menu</a>
         </li>
-        <li>
-          <a href=''>Reservation</a>
+        <li className={styles.item}>
+          <a href='#reservation'>Reservation</a>
         </li>
-        <li>
-          <a href=''>Order Online</a>
+        <li className={styles.item}>
+          <a href='#order-online'>Order Online</a>
         </li>
-        <li>
-          <a href=''>Login</a>
+        <li className={styles.item}>
+          <a href='#login'>Login</a>
         </li>
       </ul>
-      s
     </nav>
   );
 }

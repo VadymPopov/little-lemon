@@ -1,27 +1,28 @@
 import React from "react";
 import styles from "./nav.module.css";
+import { NavLink } from "react-router-dom";
 
 export default function Nav() {
   return (
     <nav>
       <ul className={styles.list}>
         <li className={styles.item}>
-          <a href='#home'>Home</a>
+          <NavLink to='/'>Home</NavLink>
         </li>
         <li className={styles.item}>
-          <a href='#about'>About</a>
+          <NavLink to='/about'>About</NavLink>
         </li>
         <li className={styles.item}>
-          <a href='#menu'>Menu</a>
+          <NavLink to='/menu'>Menu</NavLink>
         </li>
         <li className={styles.item}>
-          <a href='#reservation'>Reservation</a>
+          <NavLink to='/reservation'>Reservation</NavLink>
         </li>
         <li className={styles.item}>
-          <a href='#order-online'>Order Online</a>
+          <NavLink to='/order-online'>Order Online</NavLink>
         </li>
         <li className={styles.item}>
-          <a href='#login'>Login</a>
+          <NavLink to='/login'>Login</NavLink>
         </li>
       </ul>
     </nav>

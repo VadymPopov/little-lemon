@@ -1,15 +1,18 @@
-import Header from "./components/Header.jsx";
-import Footer from "./components/Footer.jsx";
-import Main from "./components/Main.jsx";
-import styles from "./App.module.css";
+import { Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import Home from "./pages/Home";
+import Reservation from "./pages/Reservation";
 
 function App() {
   return (
-    <div className={styles.app}>
-      <Header />
-      <Main />
-      <Footer />
-    </div>
+    <>
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path='/reservation' element={<Reservation />} />
+        </Route>
+      </Routes>
+    </>
   );
 }
 

@@ -2,16 +2,13 @@ export default function BookingForm({
   reservation,
   updateReservation,
   availableTimes,
+  submitForm,
 }) {
-  function onSubmit(e) {
-    e.preventDefault();
-    console.log(reservation);
-  }
-
   const { date, time, number, occasion } = reservation;
 
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={submitForm}>
+      <h1>Book Now</h1>
       <label htmlFor='res-date'>Choose date</label>
       <input
         type='date'

@@ -1,5 +1,19 @@
-import React, { useState, useReducer } from "react";
+import React, { useState, useReducer, useEffect } from "react";
 import BookingForm from "../components/BookingForm";
+import { fetchAPI, submitAPI } from "../utils";
+import { useNavigate } from "react-router-dom";
+
+export function initializeTimes() {
+  return fetchAPI(new Date());
+}
+export function updateTimes(state, action) {
+  switch (action.type) {
+    case "UPDATE_TIMES":
+      return fetchAPI(new Date(action.payload));
+    default:
+      return state;
+  }
+}
 
 export default function Reservation() {
   const [reservation, setReservation] = useState({
@@ -9,6 +23,28 @@ export default function Reservation() {
     occasion: "Birthday",
   });
 
+  const navigate = useNavigate();
+
+  function submitForm(e) {
+    e.preventDefault();
+    console.log(reservation);
+    const success = submitAPI(reservation);
+    if (success) {
+      alert("Reservation submitted successfully!");
+      navigate("/confirmation");
+    } else {
+      alert("Failed to submit reservation.");
+    }
+  }
+
+  useEffect(() => {
+    initializeTimes();
+  }, []);
+
+  useEffect(() => {
+    dispatch({ type: "UPDATE_TIMES", payload: reservation.date });
+  }, [reservation.date]);
+
   const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes());
 
   function updateReservation({ target: { name, value } }) {
@@ -16,22 +52,14 @@ export default function Reservation() {
       ...prevState,
       [name]: value,
     }));
-
-    dispatch({ type: "UPDATE_TIMES", payload: reservation.time });
   }
 
-  function initializeTimes() {
-    return ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
-  }
-
-  function updateTimes(state, action) {
-    return initializeTimes();
-  }
   return (
     <BookingForm
       reservation={reservation}
       updateReservation={updateReservation}
       availableTimes={availableTimes}
+      submitForm={submitForm}
     />
   );
 }

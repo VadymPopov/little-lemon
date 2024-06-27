@@ -23,7 +23,7 @@
   margin: 0;
 }
 
-.text {
+.heroText {
   color: #fff;
   font-size: 16px;
   max-width: 300px;
@@ -40,8 +40,11 @@
 }
 
 .specials {
-  margin-top: 145px;
-  margin-left: 320px;
+  padding-top: 145px;
+  padding-bottom: 63px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .titleTwo {

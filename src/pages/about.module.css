@@ -1,0 +1,50 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+  text-align: justify;
+}
+
+.founders {
+  margin-right: 30px;
+}
+
+.founder {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+}
+
+.image {
+  width: 450px;
+  height: 450px;
+  border-radius: 5%;
+  object-fit: cover;
+}
+
+.history {
+  margin-top: 20px;
+}
+
+.title {
+  color: #000;
+  font-size: 64px;
+  font-weight: 500;
+  font-family: "Markazi Text", sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.description {
+  display: flex;
+  flex-direction: row;
+}
+
+.text {
+  font-size: 18px;
+}

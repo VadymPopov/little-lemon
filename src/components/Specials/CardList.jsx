@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "./main.module.css";
-import bruchettaImg from "../images/restauranfood.jpg";
-import greekSaladImg from "../images/greek salad.jpg";
-import lemonCakeImg from "../images/lemon dessert.jpg";
+import styles from "./specials.module.css";
+import bruchettaImg from "../../images/bruchetta.jpg";
+import greekSaladImg from "../../images/greek-salad.jpg";
+import lemonCakeImg from "../../images/lemon-dessert.jpg";
 import Card from "./Card";
 
 const cards = [

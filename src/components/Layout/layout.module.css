@@ -1,0 +1,20 @@
+.app {
+  font-family: "Karla", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.heroContainer {
+  margin-right: 183px;
+  margin-left: 183px;
+}
+
+.container {
+  margin-right: 290px;
+  margin-left: 290px;
+}
+
+.outlet {
+  flex: 1;
+}

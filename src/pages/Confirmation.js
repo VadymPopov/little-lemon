@@ -1,10 +1,9 @@
 import React from "react";
-import ConfirmedBooking from "../components/ConfirmedBooking";
 
 export default function Confirmation() {
   return (
-    <>
-      <ConfirmedBooking />
-    </>
+    <div>
+      <h1>Booking has been confirmed successfully!</h1>
+    </div>
   );
 }

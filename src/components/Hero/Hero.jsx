@@ -1,13 +1,13 @@
 import React from "react";
-import styles from "./main.module.css";
-import appStyles from "../App.module.css";
-import Button from "./Button";
-import bruchettaImg from "../images/restauranfood.jpg";
+import styles from "./hero.module.css";
+import layout from "../Layout/layout.module.css";
+import Button from "../Button/Button";
+import founders from "../../images/mario-adrian-a.jpg";
 
 export default function Hero() {
   return (
     <section className={styles.hero}>
-      <div className={appStyles.container}>
+      <div className={layout.heroContainer}>
         <div className={styles.description}>
           <h1 className={styles.title}>Little Lemon</h1>
           <p className={styles.subtitle}>Chicago</p>
@@ -18,8 +18,8 @@ export default function Hero() {
           <Button>Reserve a Table</Button>
         </div>
         <img
-          src={bruchettaImg}
-          alt='bruchetta on the plate'
+          src={founders}
+          alt='founders in the kitchen'
           className={styles.image}
         />
       </div>

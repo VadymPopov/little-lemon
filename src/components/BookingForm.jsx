@@ -1,3 +1,5 @@
+import React, { useState, useEffect, useRef } from "react";
+
 export default function BookingForm({
   reservation,
   updateReservation,
@@ -6,13 +8,23 @@ export default function BookingForm({
 }) {
   const { date, time, number, occasion } = reservation;
 
+  const [isFormValid, setIsFormValid] = useState(false);
+  const formRef = useRef(null);
+
+  useEffect(() => {
+    if (formRef.current) {
+      setIsFormValid(formRef.current.checkValidity());
+    }
+  }, [date, time, number, occasion]);
+
   return (
-    <form onSubmit={submitForm}>
+    <form ref={formRef}>
       <h1>Book Now</h1>
       <label htmlFor='res-date'>Choose date</label>
       <input
         type='date'
         name='date'
+        min={new Date().toISOString().split("T")[0]}
         id='res-date'
         value={date}
         onChange={updateReservation}
@@ -39,6 +51,7 @@ export default function BookingForm({
         name='number'
         value={number}
         onChange={updateReservation}
+        required
       />
       <label htmlFor='occasion'>Occasion</label>
       <select
@@ -50,7 +63,13 @@ export default function BookingForm({
         <option>Birthday</option>
         <option>Anniversary</option>
       </select>
-      <button type='submit'>Make Your reservation</button>
+      <button
+        type='button'
+        disabled={!isFormValid}
+        onClick={submitForm}
+        aria-label='button'>
+        Make Your reservation
+      </button>
     </form>
   );
 }

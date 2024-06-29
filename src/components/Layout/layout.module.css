@@ -18,3 +18,53 @@
 .outlet {
   flex: 1;
 }
+
+@media (max-width: 1280px) {
+  .heroContainer {
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+
+  .container {
+    margin-right: 150px;
+    margin-left: 150px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .heroContainer {
+    margin-right: 70px;
+    margin-left: 70px;
+  }
+
+  .container {
+    margin-right: 90px;
+    margin-left: 90px;
+  }
+}
+
+/* For screens up to 768px (tablets) */
+@media (max-width: 768px) {
+  .heroContainer {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  .container {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+}
+
+/* For screens up to 480px (mobile) */
+@media (max-width: 480px) {
+  .heroContainer {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .container {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}

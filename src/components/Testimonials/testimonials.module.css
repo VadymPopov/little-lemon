@@ -1,8 +1,9 @@
 .list {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(4, 300px);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  padding: 0;
 }
 
 .testimonial {
@@ -41,4 +42,72 @@
 
 .container {
   padding: 125px 290px 150px;
+}
+
+@media (max-width: 1280px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .title {
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .container {
+    padding: 100px 150px 120px;
+  }
+}
+
+/* For screens up to 768px (tablets) */
+@media (max-width: 768px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .title {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .container {
+    padding: 80px 50px 100px;
+  }
+}
+
+/* For screens up to 480px (mobile) */
+@media (max-width: 480px) {
+  .list {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .title {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .container {
+    padding: 60px 20px 80px;
+  }
+
+  .testimonial {
+    padding: 15px;
+  }
+
+  .rating {
+    font-size: 14px;
+  }
+
+  .name {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+
+  .review {
+    margin-top: 8px;
+    font-size: 14px;
+  }
 }

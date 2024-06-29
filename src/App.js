@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Reservation from "./pages/Reservation";
 import Confirmation from "./pages/Confirmation";
 import About from "./pages/About";
+import Checkout from "./pages/Checkout.js";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
           <Route path='/reservation' element={<Reservation />} />
+          <Route path='/checkout' element={<Checkout />} />
           <Route path='/confirmation' element={<Confirmation />} />
           <Route path='/about' element={<About />} />
         </Route>

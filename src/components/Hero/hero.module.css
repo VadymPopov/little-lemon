@@ -39,3 +39,58 @@
   border-radius: 16px;
   object-fit: cover;
 }
+
+/* Media queries */
+
+/* For screens from 768px up to 1280px */
+@media (max-width: 1280px) and (min-width: 768px) {
+  .image {
+    width: 300px;
+    height: 300px;
+    right: 60px;
+  }
+
+  .description {
+    padding-top: 20px;
+  }
+}
+
+/* For screens below 768px */
+@media (max-width: 768px) {
+  .image {
+    display: none;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
+
+  .text {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .description {
+    padding-top: 20px;
+  }
+}
+
+/* For screens up to 480px */
+@media (max-width: 480px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .text {
+    font-size: 14px;
+    max-width: 100%;
+  }
+}

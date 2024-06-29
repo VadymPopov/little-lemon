@@ -30,8 +30,7 @@ export default function Reservation() {
     console.log(reservation);
     const success = submitAPI(reservation);
     if (success) {
-      alert("Reservation submitted successfully!");
-      navigate("/confirmation");
+      navigate("/checkout", { state: { reservation } });
     } else {
       alert("Failed to submit reservation.");
     }

@@ -48,3 +48,77 @@
 .text {
   font-size: 18px;
 }
+
+/* Media queries */
+
+/* For screens up to 1280px */
+@media (max-width: 1280px) {
+  .title {
+    font-size: 48px;
+  }
+
+  .description {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image {
+    width: 350px;
+    height: 350px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+}
+
+/* For screens up to 768px (tablets) */
+@media (max-width: 768px) {
+  .title {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .founders {
+    margin-right: 0;
+  }
+
+  .image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+}
+
+/* For screens up to 480px (mobile) */
+@media (max-width: 480px) {
+  .title {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .main {
+    padding: 10px;
+  }
+
+  .founders {
+    margin-right: 0;
+  }
+
+  .founder {
+    display: block;
+    margin: 10px auto;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+}

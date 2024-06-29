@@ -5,11 +5,48 @@
   margin-top: 14px;
 }
 
-.logo {
-  margin-right: 238px;
-}
-
 .container {
   margin-right: 183px;
   margin-left: 183px;
+}
+
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menuButton svg {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    margin-right: 80px;
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    margin-right: auto;
+  }
+
+  .container {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .menuButton {
+    display: block;
+  }
 }

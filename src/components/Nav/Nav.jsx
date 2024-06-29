@@ -3,27 +3,35 @@ import styles from "./nav.module.css";
 import { NavLink } from "react-router-dom";
 
 export default function Nav({ isMobileMenuOpen, toggleMobileMenu }) {
+  const onNavigationClick = () => {
+    if (isMobileMenuOpen) {
+      toggleMobileMenu();
+    }
+
+    return;
+  };
+
   return (
     <nav
       className={`${styles.nav} ${isMobileMenuOpen ? styles.mobileOpen : ""}`}>
       <ul className={styles.list}>
-        <li className={styles.item} onClick={toggleMobileMenu}>
+        <li className={styles.item} onClick={onNavigationClick}>
           <NavLink to='/'>Home</NavLink>
         </li>
-        <li className={styles.item} onClick={toggleMobileMenu}>
+        <li className={styles.item} onClick={onNavigationClick}>
           <NavLink to='/about'>About</NavLink>
         </li>
-        <li className={styles.item} onClick={toggleMobileMenu}>
-          <NavLink to='/menu'>Menu</NavLink>
+        <li className={styles.item} onClick={onNavigationClick}>
+          <NavLink to='/'>Menu</NavLink>
         </li>
-        <li className={styles.item} onClick={toggleMobileMenu}>
+        <li className={styles.item} onClick={onNavigationClick}>
           <NavLink to='/reservation'>Reservation</NavLink>
         </li>
-        <li className={styles.item} onClick={toggleMobileMenu}>
-          <NavLink to='/order-online'>Order Online</NavLink>
+        <li className={styles.item} onClick={onNavigationClick}>
+          <NavLink to='/'>Order Online</NavLink>
         </li>
-        <li className={styles.item} onClick={toggleMobileMenu}>
-          <NavLink to='/login'>Login</NavLink>
+        <li className={styles.item} onClick={onNavigationClick}>
+          <NavLink to='/'>Login</NavLink>
         </li>
       </ul>
     </nav>

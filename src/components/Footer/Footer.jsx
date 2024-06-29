@@ -13,10 +13,10 @@ function Footer() {
         <h4>Doormat Navigation</h4>
         <NavLink to='/'>Home</NavLink>
         <NavLink to='/about'>About</NavLink>
-        <NavLink to='/menu'>Menu</NavLink>
+        <NavLink to='/'>Menu</NavLink>
         <NavLink to='/reservation'>Reservation</NavLink>
-        <NavLink to='/order-online'>Order Online</NavLink>
-        <NavLink to='/login'>Login</NavLink>
+        <NavLink to='/'>Order Online</NavLink>
+        <NavLink to='/'>Login</NavLink>
       </nav>
       <div className={styles.footerNav}>
         <h4>Contact</h4>

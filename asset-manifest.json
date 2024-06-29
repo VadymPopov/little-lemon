@@ -1,8 +1,7 @@
 {
   "files": {
     "main.css": "/VadymPopov/little-lemon/static/css/main.249755dc.css",
-    "main.js": "/VadymPopov/little-lemon/static/js/main.388d6a8c.js",
-    "static/js/453.99c1801e.chunk.js": "/VadymPopov/little-lemon/static/js/453.99c1801e.chunk.js",
+    "main.js": "/VadymPopov/little-lemon/static/js/main.d81f2e9d.js",
     "static/media/restaurant.jpg": "/VadymPopov/little-lemon/static/media/restaurant.324d0f99bdf19400a0f7.jpg",
     "static/media/mario-adrian-a.jpg": "/VadymPopov/little-lemon/static/media/mario-adrian-a.15f0462b10ce2aaa19da.jpg",
     "static/media/mario-adrian-b.jpg": "/VadymPopov/little-lemon/static/media/mario-adrian-b.fad07c3095c94e645154.jpg",
@@ -14,11 +13,10 @@
     "static/media/hamburger-menu.svg": "/VadymPopov/little-lemon/static/media/hamburger-menu.0da6f67ced800ab909f63d5144de37ee.svg",
     "static/media/close.svg": "/VadymPopov/little-lemon/static/media/close.3d5ccb3c06264dd8a878a5a42f52d09e.svg",
     "main.249755dc.css.map": "/VadymPopov/little-lemon/static/css/main.249755dc.css.map",
-    "main.388d6a8c.js.map": "/VadymPopov/little-lemon/static/js/main.388d6a8c.js.map",
-    "453.99c1801e.chunk.js.map": "/VadymPopov/little-lemon/static/js/453.99c1801e.chunk.js.map"
+    "main.d81f2e9d.js.map": "/VadymPopov/little-lemon/static/js/main.d81f2e9d.js.map"
   },
   "entrypoints": [
     "static/css/main.249755dc.css",
-    "static/js/main.388d6a8c.js"
+    "static/js/main.d81f2e9d.js"
   ]
 }

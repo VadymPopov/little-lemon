@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/VadymPopov/little-lemon/static/css/main.249755dc.css",
-    "main.js": "/VadymPopov/little-lemon/static/js/main.d81f2e9d.js",
-    "static/media/restaurant.jpg": "/VadymPopov/little-lemon/static/media/restaurant.324d0f99bdf19400a0f7.jpg",
-    "static/media/mario-adrian-a.jpg": "/VadymPopov/little-lemon/static/media/mario-adrian-a.15f0462b10ce2aaa19da.jpg",
-    "static/media/mario-adrian-b.jpg": "/VadymPopov/little-lemon/static/media/mario-adrian-b.fad07c3095c94e645154.jpg",
-    "static/media/greek-salad.jpg": "/VadymPopov/little-lemon/static/media/greek-salad.5d97554c1ed0da6f58eb.jpg",
-    "static/media/chef.jpg": "/VadymPopov/little-lemon/static/media/chef.8fff6e56a85db5000d03.jpg",
-    "static/media/bruchetta.jpg": "/VadymPopov/little-lemon/static/media/bruchetta.4d20bab9b984b28937e5.jpg",
-    "static/media/logo.svg": "/VadymPopov/little-lemon/static/media/logo.6c132dfefa69396bba43f72aa595e62f.svg",
-    "index.html": "/VadymPopov/little-lemon/index.html",
-    "static/media/hamburger-menu.svg": "/VadymPopov/little-lemon/static/media/hamburger-menu.0da6f67ced800ab909f63d5144de37ee.svg",
-    "static/media/close.svg": "/VadymPopov/little-lemon/static/media/close.3d5ccb3c06264dd8a878a5a42f52d09e.svg",
-    "main.249755dc.css.map": "/VadymPopov/little-lemon/static/css/main.249755dc.css.map",
-    "main.d81f2e9d.js.map": "/VadymPopov/little-lemon/static/js/main.d81f2e9d.js.map"
+    "main.css": "/little-lemon/static/css/main.249755dc.css",
+    "main.js": "/little-lemon/static/js/main.2a812cd5.js",
+    "static/media/restaurant.jpg": "/little-lemon/static/media/restaurant.324d0f99bdf19400a0f7.jpg",
+    "static/media/mario-adrian-a.jpg": "/little-lemon/static/media/mario-adrian-a.15f0462b10ce2aaa19da.jpg",
+    "static/media/mario-adrian-b.jpg": "/little-lemon/static/media/mario-adrian-b.fad07c3095c94e645154.jpg",
+    "static/media/greek-salad.jpg": "/little-lemon/static/media/greek-salad.5d97554c1ed0da6f58eb.jpg",
+    "static/media/chef.jpg": "/little-lemon/static/media/chef.8fff6e56a85db5000d03.jpg",
+    "static/media/bruchetta.jpg": "/little-lemon/static/media/bruchetta.4d20bab9b984b28937e5.jpg",
+    "static/media/logo.svg": "/little-lemon/static/media/logo.6c132dfefa69396bba43f72aa595e62f.svg",
+    "index.html": "/little-lemon/index.html",
+    "static/media/hamburger-menu.svg": "/little-lemon/static/media/hamburger-menu.0da6f67ced800ab909f63d5144de37ee.svg",
+    "static/media/close.svg": "/little-lemon/static/media/close.3d5ccb3c06264dd8a878a5a42f52d09e.svg",
+    "main.249755dc.css.map": "/little-lemon/static/css/main.249755dc.css.map",
+    "main.2a812cd5.js.map": "/little-lemon/static/js/main.2a812cd5.js.map"
   },
   "entrypoints": [
     "static/css/main.249755dc.css",
-    "static/js/main.d81f2e9d.js"
+    "static/js/main.2a812cd5.js"
   ]
 }
